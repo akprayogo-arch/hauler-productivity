@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hauler Productivity v1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+<h1>Hauler Productivity Calculator</h1>
+
+<div class="panel">
+<h2>Input</h2>
+
+<label>Excavator</label>
+<select id="excavator">
+<option>CAT395</option>
+<option>ZX870</option>
+</select>
+
+<label>Distance (m)</label>
+<input id="distance" type="number" value="3000">
+
+<label>Loaded Speed (kph)</label>
+<input id="loaded" type="number" value="16">
+
+<label>Empty Speed (kph)</label>
+<input id="empty" type="number" value="18">
+
+<label>Qty OHT773</label>
+<input id="qtyOHT" type="number" value="3">
+
+<label>Qty TR50D</label>
+<input id="qtyTR" type="number" value="4">
+
+<button onclick="calculate()">Calculate</button>
+<button onclick="resetForm()">Reset</button>
+</div>
+
+<div class="panel">
+<h2>Result</h2>
+<table>
+<tr><th colspan="2">OHT773</th></tr>
+<tr><td>Travel Loaded</td><td id="o_tl"></td></tr>
+<tr><td>Travel Empty</td><td id="o_te"></td></tr>
+<tr><td>CT Non Travel</td><td id="o_ctn"></td></tr>
+<tr><td>Total CT</td><td id="o_ct"></td></tr>
+<tr><td>Rit/Hr</td><td id="o_rit"></td></tr>
+<tr><td>Prod/Hauler</td><td id="o_prod"></td></tr>
+<tr><td>Total Prod</td><td id="o_total"></td></tr>
+
+<tr><th colspan="2">TR50D</th></tr>
+<tr><td>Travel Loaded</td><td id="t_tl"></td></tr>
+<tr><td>Travel Empty</td><td id="t_te"></td></tr>
+<tr><td>CT Non Travel</td><td id="t_ctn"></td></tr>
+<tr><td>Total CT</td><td id="t_ct"></td></tr>
+<tr><td>Rit/Hr</td><td id="t_rit"></td></tr>
+<tr><td>Prod/Hauler</td><td id="t_prod"></td></tr>
+<tr><td>Total Prod</td><td id="t_total"></td></tr>
+
+<tr class="grand"><td>Loader Productivity</td><td id="loader"></td></tr>
+</table>
+</div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

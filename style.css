@@ -1,0 +1,11 @@
+body{margin:0;background:#ececec;font-family:Arial}
+.app{max-width:900px;margin:auto;padding:20px}
+h1{text-align:center;background:#f4c400;padding:15px;border-radius:8px}
+.panel{background:white;padding:15px;border-radius:8px;margin-bottom:15px}
+label{display:block;margin-top:10px;font-weight:bold}
+input,select{width:100%;padding:8px;background:#fff7a8;border:1px solid #bbb;border-radius:4px}
+button{margin-top:15px;padding:10px 16px}
+table{width:100%;border-collapse:collapse}
+td,th{border:1px solid #ccc;padding:8px}
+th{background:#f4c400}
+.grand td{font-size:18px;font-weight:bold;background:#d9eefc}
